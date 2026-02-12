@@ -11,9 +11,10 @@ output "region" {
 }
 
 output "vpc_id" {
-  value = aws_vpc.bedrock.id
+  value = aws_vpc.main.id
+
 }
 
 output "assets_bucket_name" {
-  value = aws_s3_bucket.assets.bucket
+  value = "project-bedrock-state-bucket"
 }
